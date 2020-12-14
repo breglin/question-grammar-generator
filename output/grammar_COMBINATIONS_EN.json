@@ -1,6 +1,6 @@
 {
   "grammarEntries" : [ {
-    "id" : "51",
+    "id" : "58",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -17,7 +17,7 @@
     },
     "combination" : true
   }, {
-    "id" : "52",
+    "id" : "59",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -34,7 +34,7 @@
     },
     "combination" : true
   }, {
-    "id" : "53",
+    "id" : "60",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -51,7 +51,7 @@
     },
     "combination" : true
   }, {
-    "id" : "54",
+    "id" : "61",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -68,7 +68,7 @@
     },
     "combination" : true
   }, {
-    "id" : "55",
+    "id" : "62",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -85,7 +85,7 @@
     },
     "combination" : true
   }, {
-    "id" : "56",
+    "id" : "63",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -102,7 +102,7 @@
     },
     "combination" : true
   }, {
-    "id" : "57",
+    "id" : "64",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -119,7 +119,7 @@
     },
     "combination" : true
   }, {
-    "id" : "58",
+    "id" : "65",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -136,7 +136,7 @@
     },
     "combination" : true
   }, {
-    "id" : "59",
+    "id" : "66",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -153,7 +153,7 @@
     },
     "combination" : true
   }, {
-    "id" : "60",
+    "id" : "67",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -170,7 +170,7 @@
     },
     "combination" : true
   }, {
-    "id" : "61",
+    "id" : "68",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -187,7 +187,7 @@
     },
     "combination" : true
   }, {
-    "id" : "62",
+    "id" : "69",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -204,7 +204,7 @@
     },
     "combination" : true
   }, {
-    "id" : "63",
+    "id" : "70",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -221,7 +221,7 @@
     },
     "combination" : true
   }, {
-    "id" : "64",
+    "id" : "71",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -238,7 +238,7 @@
     },
     "combination" : true
   }, {
-    "id" : "65",
+    "id" : "72",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -255,7 +255,7 @@
     },
     "combination" : true
   }, {
-    "id" : "66",
+    "id" : "73",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -272,7 +272,7 @@
     },
     "combination" : true
   }, {
-    "id" : "67",
+    "id" : "74",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -289,7 +289,7 @@
     },
     "combination" : true
   }, {
-    "id" : "68",
+    "id" : "75",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -306,7 +306,7 @@
     },
     "combination" : true
   }, {
-    "id" : "69",
+    "id" : "76",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -323,7 +323,7 @@
     },
     "combination" : true
   }, {
-    "id" : "70",
+    "id" : "77",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -340,7 +340,326 @@
     },
     "combination" : true
   }, {
-    "id" : "71",
+    "id" : "78",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "PERSON",
+    "returnType" : "PERSON",
+    "frameType" : "VP",
+    "sentences" : [ "What composed movies directed by $x?", "What composes movies directed by $x?", "Which person composed movies directed by $x?", "Which person composes movies directed by $x?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/ontology/musicComposer> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/director> ?objOfPropx)\n)\n",
+    "sentenceToSparqlParameterMapping" : {
+      "$x" : "objOfPropx"
+    },
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "$x",
+      "bindingList" : [ {
+        "label" : "Billy Wilder",
+        "uri" : "http://dbpedia.org/resource/Billy_Wilder"
+      }, {
+        "label" : "Blake Edwards",
+        "uri" : "http://dbpedia.org/resource/Blake_Edwards"
+      }, {
+        "label" : "Clint Eastwood",
+        "uri" : "http://dbpedia.org/resource/Clint_Eastwood"
+      }, {
+        "label" : "Don Siegel",
+        "uri" : "http://dbpedia.org/resource/Don_Siegel"
+      }, {
+        "label" : "Elia Kazan",
+        "uri" : "http://dbpedia.org/resource/Elia_Kazan"
+      }, {
+        "label" : "Godfrey Reggio",
+        "uri" : "http://dbpedia.org/resource/Godfrey_Reggio"
+      }, {
+        "label" : "John Carpenter",
+        "uri" : "http://dbpedia.org/resource/John_Carpenter"
+      }, {
+        "label" : "John Huston",
+        "uri" : "http://dbpedia.org/resource/John_Huston"
+      }, {
+        "label" : "Luc Besson",
+        "uri" : "http://dbpedia.org/resource/Luc_Besson"
+      }, {
+        "label" : "Luchino Visconti",
+        "uri" : "http://dbpedia.org/resource/Luchino_Visconti"
+      }, {
+        "label" : "Peter Weir",
+        "uri" : "http://dbpedia.org/resource/Peter_Weir"
+      }, {
+        "label" : "Roberto Rossellini",
+        "uri" : "http://dbpedia.org/resource/Roberto_Rossellini"
+      }, {
+        "label" : "Sergio Leone",
+        "uri" : "http://dbpedia.org/resource/Sergio_Leone"
+      }, {
+        "label" : "Ted Demme",
+        "uri" : "http://dbpedia.org/resource/Ted_Demme"
+      }, {
+        "label" : "Terry Gilliam",
+        "uri" : "http://dbpedia.org/resource/Terry_Gilliam"
+      }, {
+        "label" : "Tony Richardson",
+        "uri" : "http://dbpedia.org/resource/Tony_Richardson"
+      }, {
+        "label" : "Vittorio De Sica",
+        "uri" : "http://dbpedia.org/resource/Vittorio_De_Sica"
+      }, {
+        "label" : "Wim Wenders",
+        "uri" : "http://dbpedia.org/resource/Wim_Wenders"
+      }, {
+        "label" : "Woody Allen",
+        "uri" : "http://dbpedia.org/resource/Woody_Allen"
+      }, {
+        "label" : "Marcello Albani",
+        "uri" : "http://dbpedia.org/resource/Marcello_Albani"
+      }, {
+        "label" : "Bimal Roy",
+        "uri" : "http://dbpedia.org/resource/Bimal_Roy"
+      }, {
+        "label" : "G. P. Sippy",
+        "uri" : "http://dbpedia.org/resource/G._P._Sippy"
+      }, {
+        "label" : "Griffin Dunne",
+        "uri" : "http://dbpedia.org/resource/Griffin_Dunne"
+      }, {
+        "label" : "Hideo Nakata",
+        "uri" : "http://dbpedia.org/resource/Hideo_Nakata"
+      }, {
+        "label" : "John Landis",
+        "uri" : "http://dbpedia.org/resource/John_Landis"
+      }, {
+        "label" : "John McNaughton",
+        "uri" : "http://dbpedia.org/resource/John_McNaughton"
+      }, {
+        "label" : "Jun Fukuda",
+        "uri" : "http://dbpedia.org/resource/Jun_Fukuda"
+      }, {
+        "label" : "Kimio Yabuki",
+        "uri" : "http://dbpedia.org/resource/Kimio_Yabuki"
+      }, {
+        "label" : "Nanni Moretti",
+        "uri" : "http://dbpedia.org/resource/Nanni_Moretti"
+      }, {
+        "label" : "Tony Giglio",
+        "uri" : "http://dbpedia.org/resource/Tony_Giglio"
+      }, {
+        "label" : "Walt Becker",
+        "uri" : "http://dbpedia.org/resource/Walt_Becker"
+      }, {
+        "label" : "Oliver Stone",
+        "uri" : "http://dbpedia.org/resource/Oliver_Stone"
+      }, {
+        "label" : "Yorgos Lanthimos",
+        "uri" : "http://dbpedia.org/resource/Yorgos_Lanthimos"
+      }, {
+        "label" : "Michael Lindsay-Hogg",
+        "uri" : "http://dbpedia.org/resource/Michael_Lindsay-Hogg"
+      }, {
+        "label" : "Bruno Corbucci",
+        "uri" : "http://dbpedia.org/resource/Bruno_Corbucci"
+      }, {
+        "label" : "Carlos Bolado",
+        "uri" : "http://dbpedia.org/resource/Carlos_Bolado"
+      }, {
+        "label" : "David Zucker (filmmaker)",
+        "uri" : "http://dbpedia.org/resource/David_Zucker_(filmmaker)"
+      }, {
+        "label" : "Karl Brown (cinematographer)",
+        "uri" : "http://dbpedia.org/resource/Karl_Brown_(cinematographer)"
+      }, {
+        "label" : "Manuel Gómez Pereira",
+        "uri" : "http://dbpedia.org/resource/Manuel_Gómez_Pereira"
+      }, {
+        "label" : "Mike Figgis",
+        "uri" : "http://dbpedia.org/resource/Mike_Figgis"
+      }, {
+        "label" : "Stanley Donen",
+        "uri" : "http://dbpedia.org/resource/Stanley_Donen"
+      }, {
+        "label" : "Tim Burstall",
+        "uri" : "http://dbpedia.org/resource/Tim_Burstall"
+      }, {
+        "label" : "Anand Gandhi",
+        "uri" : "http://dbpedia.org/resource/Anand_Gandhi"
+      }, {
+        "label" : "George Archainbaud",
+        "uri" : "http://dbpedia.org/resource/George_Archainbaud"
+      }, {
+        "label" : "Peter Graham Scott",
+        "uri" : "http://dbpedia.org/resource/Peter_Graham_Scott"
+      }, {
+        "label" : "Richard Pearce (film director)",
+        "uri" : "http://dbpedia.org/resource/Richard_Pearce_(film_director)"
+      }, {
+        "label" : "Brenton Spencer",
+        "uri" : "http://dbpedia.org/resource/Brenton_Spencer"
+      }, {
+        "label" : "Kamalakara Kameswara Rao",
+        "uri" : "http://dbpedia.org/resource/Kamalakara_Kameswara_Rao"
+      }, {
+        "label" : "Betty Kaplan",
+        "uri" : "http://dbpedia.org/resource/Betty_Kaplan"
+      }, {
+        "label" : "Lewis Teague",
+        "uri" : "http://dbpedia.org/resource/Lewis_Teague"
+      }, {
+        "label" : "Albert Pyun",
+        "uri" : "http://dbpedia.org/resource/Albert_Pyun"
+      }, {
+        "label" : "Edwin Carewe",
+        "uri" : "http://dbpedia.org/resource/Edwin_Carewe"
+      }, {
+        "label" : "Carol Reed",
+        "uri" : "http://dbpedia.org/resource/Carol_Reed"
+      }, {
+        "label" : "Sam Pillsbury",
+        "uri" : "http://dbpedia.org/resource/Sam_Pillsbury"
+      }, {
+        "label" : "Sidney Olcott",
+        "uri" : "http://dbpedia.org/resource/Sidney_Olcott"
+      }, {
+        "label" : "Dan Curtis",
+        "uri" : "http://dbpedia.org/resource/Dan_Curtis"
+      }, {
+        "label" : "Maurice Pialat",
+        "uri" : "http://dbpedia.org/resource/Maurice_Pialat"
+      }, {
+        "label" : "Wayne Wang",
+        "uri" : "http://dbpedia.org/resource/Wayne_Wang"
+      }, {
+        "label" : "Johnnie To",
+        "uri" : "http://dbpedia.org/resource/Johnnie_To"
+      }, {
+        "label" : "Marco Bechis",
+        "uri" : "http://dbpedia.org/resource/Marco_Bechis"
+      }, {
+        "label" : "Mehboob Khan",
+        "uri" : "http://dbpedia.org/resource/Mehboob_Khan"
+      }, {
+        "label" : "Paul W. S. Anderson",
+        "uri" : "http://dbpedia.org/resource/Paul_W._S._Anderson"
+      }, {
+        "label" : "Steno (director)",
+        "uri" : "http://dbpedia.org/resource/Steno_(director)"
+      }, {
+        "label" : "Ning Ying",
+        "uri" : "http://dbpedia.org/resource/Ning_Ying"
+      }, {
+        "label" : "Francesco Laudadio",
+        "uri" : "http://dbpedia.org/resource/Francesco_Laudadio"
+      }, {
+        "label" : "Lev Atamanov",
+        "uri" : "http://dbpedia.org/resource/Lev_Atamanov"
+      }, {
+        "label" : "Pat Jackson",
+        "uri" : "http://dbpedia.org/resource/Pat_Jackson"
+      }, {
+        "label" : "Robert Allan Ackerman",
+        "uri" : "http://dbpedia.org/resource/Robert_Allan_Ackerman"
+      }, {
+        "label" : "Roy Battersby",
+        "uri" : "http://dbpedia.org/resource/Roy_Battersby"
+      }, {
+        "label" : "Steve Carver",
+        "uri" : "http://dbpedia.org/resource/Steve_Carver"
+      }, {
+        "label" : "Willard Carroll",
+        "uri" : "http://dbpedia.org/resource/Willard_Carroll"
+      }, {
+        "label" : "Jonas Pate",
+        "uri" : "http://dbpedia.org/resource/Jonas_Pate"
+      }, {
+        "label" : "Barbet Schroeder",
+        "uri" : "http://dbpedia.org/resource/Barbet_Schroeder"
+      }, {
+        "label" : "Diablo Cody",
+        "uri" : "http://dbpedia.org/resource/Diablo_Cody"
+      }, {
+        "label" : "Dom DeLuise",
+        "uri" : "http://dbpedia.org/resource/Dom_DeLuise"
+      }, {
+        "label" : "Henry King (director)",
+        "uri" : "http://dbpedia.org/resource/Henry_King_(director)"
+      }, {
+        "label" : "Juan Carlos Fresnadillo",
+        "uri" : "http://dbpedia.org/resource/Juan_Carlos_Fresnadillo"
+      }, {
+        "label" : "Merian C. Cooper",
+        "uri" : "http://dbpedia.org/resource/Merian_C._Cooper"
+      }, {
+        "label" : "Michael Powell",
+        "uri" : "http://dbpedia.org/resource/Michael_Powell"
+      }, {
+        "label" : "Richard Kelly (director)",
+        "uri" : "http://dbpedia.org/resource/Richard_Kelly_(director)"
+      }, {
+        "label" : "Richard Lester",
+        "uri" : "http://dbpedia.org/resource/Richard_Lester"
+      }, {
+        "label" : "Ringo Lam",
+        "uri" : "http://dbpedia.org/resource/Ringo_Lam"
+      }, {
+        "label" : "Robert Zemeckis",
+        "uri" : "http://dbpedia.org/resource/Robert_Zemeckis"
+      }, {
+        "label" : "Roger Donaldson",
+        "uri" : "http://dbpedia.org/resource/Roger_Donaldson"
+      }, {
+        "label" : "S. Shankar",
+        "uri" : "http://dbpedia.org/resource/S._Shankar"
+      }, {
+        "label" : "Claude Chabrol",
+        "uri" : "http://dbpedia.org/resource/Claude_Chabrol"
+      }, {
+        "label" : "Danny DeVito",
+        "uri" : "http://dbpedia.org/resource/Danny_DeVito"
+      }, {
+        "label" : "Douglas Sirk",
+        "uri" : "http://dbpedia.org/resource/Douglas_Sirk"
+      }, {
+        "label" : "Fred Zinnemann",
+        "uri" : "http://dbpedia.org/resource/Fred_Zinnemann"
+      }, {
+        "label" : "Jean Renoir",
+        "uri" : "http://dbpedia.org/resource/Jean_Renoir"
+      }, {
+        "label" : "John Hughes (filmmaker)",
+        "uri" : "http://dbpedia.org/resource/John_Hughes_(filmmaker)"
+      }, {
+        "label" : "Kenneth Branagh",
+        "uri" : "http://dbpedia.org/resource/Kenneth_Branagh"
+      }, {
+        "label" : "Anurag Basu",
+        "uri" : "http://dbpedia.org/resource/Anurag_Basu"
+      }, {
+        "label" : "Constantine Makris",
+        "uri" : "http://dbpedia.org/resource/Constantine_Makris"
+      }, {
+        "label" : "Gordon Parry (film director)",
+        "uri" : "http://dbpedia.org/resource/Gordon_Parry_(film_director)"
+      }, {
+        "label" : "Kodi Ramakrishna",
+        "uri" : "http://dbpedia.org/resource/Kodi_Ramakrishna"
+      }, {
+        "label" : "Menahem Golan",
+        "uri" : "http://dbpedia.org/resource/Menahem_Golan"
+      }, {
+        "label" : "Michael Kennedy (director)",
+        "uri" : "http://dbpedia.org/resource/Michael_Kennedy_(director)"
+      }, {
+        "label" : "Prakash Raj",
+        "uri" : "http://dbpedia.org/resource/Prakash_Raj"
+      }, {
+        "label" : "Robert F. McGowan",
+        "uri" : "http://dbpedia.org/resource/Robert_F._McGowan"
+      } ]
+    },
+    "combination" : true
+  }, {
+    "id" : "79",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "PERSON",
@@ -659,7 +978,7 @@
     },
     "combination" : true
   }, {
-    "id" : "72",
+    "id" : "80",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -676,7 +995,7 @@
     },
     "combination" : true
   }, {
-    "id" : "73",
+    "id" : "81",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -693,7 +1012,7 @@
     },
     "combination" : true
   }, {
-    "id" : "74",
+    "id" : "82",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -710,7 +1029,7 @@
     },
     "combination" : true
   }, {
-    "id" : "75",
+    "id" : "83",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -727,7 +1046,7 @@
     },
     "combination" : true
   }, {
-    "id" : "76",
+    "id" : "84",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -744,7 +1063,7 @@
     },
     "combination" : true
   }, {
-    "id" : "77",
+    "id" : "85",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -761,7 +1080,7 @@
     },
     "combination" : true
   }, {
-    "id" : "78",
+    "id" : "86",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -778,7 +1097,7 @@
     },
     "combination" : true
   }, {
-    "id" : "79",
+    "id" : "87",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -795,7 +1114,7 @@
     },
     "combination" : true
   }, {
-    "id" : "80",
+    "id" : "88",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -812,7 +1131,7 @@
     },
     "combination" : true
   }, {
-    "id" : "81",
+    "id" : "89",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -829,7 +1148,7 @@
     },
     "combination" : true
   }, {
-    "id" : "82",
+    "id" : "90",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -846,7 +1165,7 @@
     },
     "combination" : true
   }, {
-    "id" : "83",
+    "id" : "91",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -863,7 +1182,7 @@
     },
     "combination" : true
   }, {
-    "id" : "84",
+    "id" : "92",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -880,7 +1199,7 @@
     },
     "combination" : true
   }, {
-    "id" : "85",
+    "id" : "93",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -897,7 +1216,7 @@
     },
     "combination" : true
   }, {
-    "id" : "86",
+    "id" : "94",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -914,7 +1233,7 @@
     },
     "combination" : true
   }, {
-    "id" : "87",
+    "id" : "95",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -931,7 +1250,7 @@
     },
     "combination" : true
   }, {
-    "id" : "88",
+    "id" : "96",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -948,7 +1267,7 @@
     },
     "combination" : true
   }, {
-    "id" : "89",
+    "id" : "97",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -965,7 +1284,7 @@
     },
     "combination" : true
   }, {
-    "id" : "90",
+    "id" : "98",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -982,7 +1301,7 @@
     },
     "combination" : true
   }, {
-    "id" : "91",
+    "id" : "99",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "THING",
@@ -996,6 +1315,1005 @@
     "sentenceBindings" : {
       "bindingVariableName" : "NONE",
       "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "100",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian cleric died?", "When was the Belgian clerics died?", "When were the a Belgian cleric died?", "When were the Belgian clerics died?", "Which city was the a Belgian cleric died?", "Which city was the Belgian clerics died?", "Which city were the a Belgian cleric died?", "Which city were the Belgian clerics died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Cleric>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "101",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian office holder died?", "When was the Belgian office holders died?", "When were the a Belgian office holder died?", "When were the Belgian office holders died?", "Which city was the a Belgian office holder died?", "Which city was the Belgian office holders died?", "Which city were the a Belgian office holder died?", "Which city were the Belgian office holders died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/OfficeHolder>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "102",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian agent died?", "When was the Belgian agents died?", "When were the a Belgian agent died?", "When were the Belgian agents died?", "Which city was the a Belgian agent died?", "Which city was the Belgian agents died?", "Which city were the a Belgian agent died?", "Which city were the Belgian agents died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Agent>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "103",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian economist died?", "When was the Belgian economists died?", "When were the a Belgian economist died?", "When were the Belgian economists died?", "Which city was the a Belgian economist died?", "Which city was the Belgian economists died?", "Which city were the a Belgian economist died?", "Which city were the Belgian economists died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Economist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "104",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian motorcycle rider died?", "When was the Belgian motorcycle riders died?", "When were the a Belgian motorcycle rider died?", "When were the Belgian motorcycle riders died?", "Which city was the a Belgian motorcycle rider died?", "Which city was the Belgian motorcycle riders died?", "Which city were the a Belgian motorcycle rider died?", "Which city were the Belgian motorcycle riders died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MotorcycleRider>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "105",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian artist died?", "When was the Belgian artists died?", "When were the a Belgian artist died?", "When were the Belgian artists died?", "Which city was the a Belgian artist died?", "Which city was the Belgian artists died?", "Which city were the a Belgian artist died?", "Which city were the Belgian artists died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "106",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian athlete died?", "When was the Belgian athletes died?", "When were the a Belgian athlete died?", "When were the Belgian athletes died?", "Which city was the a Belgian athlete died?", "Which city was the Belgian athletes died?", "Which city were the a Belgian athlete died?", "Which city were the Belgian athletes died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Athlete>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "107",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian scientist died?", "When was the Belgian scientists died?", "When were the a Belgian scientist died?", "When were the Belgian scientists died?", "Which city was the a Belgian scientist died?", "Which city was the Belgian scientists died?", "Which city were the a Belgian scientist died?", "Which city were the Belgian scientists died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Scientist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "108",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian architect died?", "When was the Belgian architects died?", "When were the a Belgian architect died?", "When were the Belgian architects died?", "Which city was the a Belgian architect died?", "Which city was the Belgian architects died?", "Which city were the a Belgian architect died?", "Which city were the Belgian architects died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Architect>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "109",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian golf player died?", "When was the Belgian golf players died?", "When were the a Belgian golf player died?", "When were the Belgian golf players died?", "Which city was the a Belgian golf player died?", "Which city was the Belgian golf players died?", "Which city were the a Belgian golf player died?", "Which city were the Belgian golf players died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/GolfPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "110",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian racing driver died?", "When was the Belgian racing drivers died?", "When were the a Belgian racing driver died?", "When were the Belgian racing drivers died?", "Which city was the a Belgian racing driver died?", "Which city was the Belgian racing drivers died?", "Which city were the a Belgian racing driver died?", "Which city were the Belgian racing drivers died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/RacingDriver>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "111",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian politician died?", "When was the Belgian politicians died?", "When were the a Belgian politician died?", "When were the Belgian politicians died?", "Which city was the a Belgian politician died?", "Which city was the Belgian politicians died?", "Which city were the a Belgian politician died?", "Which city were the Belgian politicians died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "112",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian swimmer died?", "When was the Belgian swimmers died?", "When were the a Belgian swimmer died?", "When were the Belgian swimmers died?", "Which city was the a Belgian swimmer died?", "Which city was the Belgian swimmers died?", "Which city were the a Belgian swimmer died?", "Which city were the Belgian swimmers died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Swimmer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "113",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian volleyball player died?", "When was the Belgian volleyball players died?", "When were the a Belgian volleyball player died?", "When were the Belgian volleyball players died?", "Which city was the a Belgian volleyball player died?", "Which city was the Belgian volleyball players died?", "Which city were the a Belgian volleyball player died?", "Which city were the Belgian volleyball players died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/VolleyballPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "114",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian person died?", "When was the Belgian persons died?", "When were the a Belgian person died?", "When were the Belgian persons died?", "Which city was the a Belgian person died?", "Which city was the Belgian persons died?", "Which city were the a Belgian person died?", "Which city were the Belgian persons died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "115",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian Christian Bishop died?", "When was the Belgian Christian Bishops died?", "When were the a Belgian Christian Bishop died?", "When were the Belgian Christian Bishops died?", "Which city was the a Belgian Christian Bishop died?", "Which city was the Belgian Christian Bishops died?", "Which city were the a Belgian Christian Bishop died?", "Which city were the Belgian Christian Bishops died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/ChristianBishop>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "116",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian comics creator died?", "When was the Belgian comics creators died?", "When were the a Belgian comics creator died?", "When were the Belgian comics creators died?", "Which city was the a Belgian comics creator died?", "Which city was the Belgian comics creators died?", "Which city were the a Belgian comics creator died?", "Which city were the Belgian comics creators died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/ComicsCreator>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "117",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian writer died?", "When was the Belgian writers died?", "When were the a Belgian writer died?", "When were the Belgian writers died?", "Which city was the a Belgian writer died?", "Which city was the Belgian writers died?", "Which city were the a Belgian writer died?", "Which city were the Belgian writers died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Writer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "118",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian motorsport racer died?", "When was the Belgian motorsport racers died?", "When were the a Belgian motorsport racer died?", "When were the Belgian motorsport racers died?", "Which city was the a Belgian motorsport racer died?", "Which city was the Belgian motorsport racers died?", "Which city were the a Belgian motorsport racer died?", "Which city were the Belgian motorsport racers died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MotorsportRacer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "119",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian musical artist died?", "When was the Belgian musical artists died?", "When were the a Belgian musical artist died?", "When were the Belgian musical artists died?", "Which city was the a Belgian musical artist died?", "Which city was the Belgian musical artists died?", "Which city were the a Belgian musical artist died?", "Which city were the Belgian musical artists died?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <hhttp://dbpedia.org/ontology/deathPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MusicalArtist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "120",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian cleric buried?", "When was the Belgian clerics buried?", "When were the a Belgian cleric buried?", "When were the Belgian clerics buried?", "Which city was the a Belgian cleric buried?", "Which city was the Belgian clerics buried?", "Which city were the a Belgian cleric buried?", "Which city were the Belgian clerics buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Cleric>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "121",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian office holder buried?", "When was the Belgian office holders buried?", "When were the a Belgian office holder buried?", "When were the Belgian office holders buried?", "Which city was the a Belgian office holder buried?", "Which city was the Belgian office holders buried?", "Which city were the a Belgian office holder buried?", "Which city were the Belgian office holders buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/OfficeHolder>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "122",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian agent buried?", "When was the Belgian agents buried?", "When were the a Belgian agent buried?", "When were the Belgian agents buried?", "Which city was the a Belgian agent buried?", "Which city was the Belgian agents buried?", "Which city were the a Belgian agent buried?", "Which city were the Belgian agents buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Agent>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "123",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian economist buried?", "When was the Belgian economists buried?", "When were the a Belgian economist buried?", "When were the Belgian economists buried?", "Which city was the a Belgian economist buried?", "Which city was the Belgian economists buried?", "Which city were the a Belgian economist buried?", "Which city were the Belgian economists buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Economist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "124",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian motorcycle rider buried?", "When was the Belgian motorcycle riders buried?", "When were the a Belgian motorcycle rider buried?", "When were the Belgian motorcycle riders buried?", "Which city was the a Belgian motorcycle rider buried?", "Which city was the Belgian motorcycle riders buried?", "Which city were the a Belgian motorcycle rider buried?", "Which city were the Belgian motorcycle riders buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MotorcycleRider>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "125",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian artist buried?", "When was the Belgian artists buried?", "When were the a Belgian artist buried?", "When were the Belgian artists buried?", "Which city was the a Belgian artist buried?", "Which city was the Belgian artists buried?", "Which city were the a Belgian artist buried?", "Which city were the Belgian artists buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "126",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian athlete buried?", "When was the Belgian athletes buried?", "When were the a Belgian athlete buried?", "When were the Belgian athletes buried?", "Which city was the a Belgian athlete buried?", "Which city was the Belgian athletes buried?", "Which city were the a Belgian athlete buried?", "Which city were the Belgian athletes buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Athlete>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "127",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian scientist buried?", "When was the Belgian scientists buried?", "When were the a Belgian scientist buried?", "When were the Belgian scientists buried?", "Which city was the a Belgian scientist buried?", "Which city was the Belgian scientists buried?", "Which city were the a Belgian scientist buried?", "Which city were the Belgian scientists buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Scientist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "128",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian architect buried?", "When was the Belgian architects buried?", "When were the a Belgian architect buried?", "When were the Belgian architects buried?", "Which city was the a Belgian architect buried?", "Which city was the Belgian architects buried?", "Which city were the a Belgian architect buried?", "Which city were the Belgian architects buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Architect>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "129",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian golf player buried?", "When was the Belgian golf players buried?", "When were the a Belgian golf player buried?", "When were the Belgian golf players buried?", "Which city was the a Belgian golf player buried?", "Which city was the Belgian golf players buried?", "Which city were the a Belgian golf player buried?", "Which city were the Belgian golf players buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/GolfPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "130",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian racing driver buried?", "When was the Belgian racing drivers buried?", "When were the a Belgian racing driver buried?", "When were the Belgian racing drivers buried?", "Which city was the a Belgian racing driver buried?", "Which city was the Belgian racing drivers buried?", "Which city were the a Belgian racing driver buried?", "Which city were the Belgian racing drivers buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/RacingDriver>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "131",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian politician buried?", "When was the Belgian politicians buried?", "When were the a Belgian politician buried?", "When were the Belgian politicians buried?", "Which city was the a Belgian politician buried?", "Which city was the Belgian politicians buried?", "Which city were the a Belgian politician buried?", "Which city were the Belgian politicians buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "132",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian swimmer buried?", "When was the Belgian swimmers buried?", "When were the a Belgian swimmer buried?", "When were the Belgian swimmers buried?", "Which city was the a Belgian swimmer buried?", "Which city was the Belgian swimmers buried?", "Which city were the a Belgian swimmer buried?", "Which city were the Belgian swimmers buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Swimmer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "133",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian volleyball player buried?", "When was the Belgian volleyball players buried?", "When were the a Belgian volleyball player buried?", "When were the Belgian volleyball players buried?", "Which city was the a Belgian volleyball player buried?", "Which city was the Belgian volleyball players buried?", "Which city were the a Belgian volleyball player buried?", "Which city were the Belgian volleyball players buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/VolleyballPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "134",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian person buried?", "When was the Belgian persons buried?", "When were the a Belgian person buried?", "When were the Belgian persons buried?", "Which city was the a Belgian person buried?", "Which city was the Belgian persons buried?", "Which city were the a Belgian person buried?", "Which city were the Belgian persons buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "135",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian Christian Bishop buried?", "When was the Belgian Christian Bishops buried?", "When were the a Belgian Christian Bishop buried?", "When were the Belgian Christian Bishops buried?", "Which city was the a Belgian Christian Bishop buried?", "Which city was the Belgian Christian Bishops buried?", "Which city were the a Belgian Christian Bishop buried?", "Which city were the Belgian Christian Bishops buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/ChristianBishop>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "136",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian comics creator buried?", "When was the Belgian comics creators buried?", "When were the a Belgian comics creator buried?", "When were the Belgian comics creators buried?", "Which city was the a Belgian comics creator buried?", "Which city was the Belgian comics creators buried?", "Which city were the a Belgian comics creator buried?", "Which city were the Belgian comics creators buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/ComicsCreator>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "137",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian writer buried?", "When was the Belgian writers buried?", "When were the a Belgian writer buried?", "When were the Belgian writers buried?", "Which city was the a Belgian writer buried?", "Which city was the Belgian writers buried?", "Which city were the a Belgian writer buried?", "Which city were the Belgian writers buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Writer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "138",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian motorsport racer buried?", "When was the Belgian motorsport racers buried?", "When were the a Belgian motorsport racer buried?", "When were the Belgian motorsport racers buried?", "Which city was the a Belgian motorsport racer buried?", "Which city was the Belgian motorsport racers buried?", "Which city were the a Belgian motorsport racer buried?", "Which city were the Belgian motorsport racers buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MotorsportRacer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "139",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "CITY",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the a Belgian musical artist buried?", "When was the Belgian musical artists buried?", "When were the a Belgian musical artist buried?", "When were the Belgian musical artists buried?", "Which city was the a Belgian musical artist buried?", "Which city was the Belgian musical artists buried?", "Which city were the a Belgian musical artist buried?", "Which city were the Belgian musical artists buried?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/property/burialPlace> ?objOfProp)\n  (triple ?subjOfProp <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Belgium>)\n  (triple ?subjOfProp <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/MusicalArtist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : true
+  }, {
+    "id" : "140",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "PERSON",
+    "returnType" : "DATE",
+    "frameType" : "IPP",
+    "sentences" : [ "When was the the birth place of $x dissolved?", "When were the the birth place of $x dissolved?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?subjOfProp <http://dbpedia.org/ontology/dissolutionDate> ?objOfProp)\n  (triple ?subjOfPropx <http://dbpedia.org/ontology/birthPlace> ?subjOfProp)\n)\n",
+    "sentenceToSparqlParameterMapping" : {
+      "$x" : "subjOfPropx"
+    },
+    "returnVariable" : "objOfProp",
+    "sentenceBindings" : {
+      "bindingVariableName" : "$x",
+      "bindingList" : [ {
+        "label" : "Alexandru Ioan Cuza",
+        "uri" : "http://dbpedia.org/resource/Alexandru_Ioan_Cuza"
+      }, {
+        "label" : "Nursultan Nazarbayev",
+        "uri" : "http://dbpedia.org/resource/Nursultan_Nazarbayev"
+      }, {
+        "label" : "Sima Guang",
+        "uri" : "http://dbpedia.org/resource/Sima_Guang"
+      }, {
+        "label" : "Tony Hoare",
+        "uri" : "http://dbpedia.org/resource/Tony_Hoare"
+      }, {
+        "label" : "Henno Prinsloo",
+        "uri" : "http://dbpedia.org/resource/Henno_Prinsloo"
+      }, {
+        "label" : "Agus Salim",
+        "uri" : "http://dbpedia.org/resource/Agus_Salim"
+      }, {
+        "label" : "Anagarika Dharmapala",
+        "uri" : "http://dbpedia.org/resource/Anagarika_Dharmapala"
+      }, {
+        "label" : "Chandra Wickramasinghe",
+        "uri" : "http://dbpedia.org/resource/Chandra_Wickramasinghe"
+      }, {
+        "label" : "Cyrille Beaudry",
+        "uri" : "http://dbpedia.org/resource/Cyrille_Beaudry"
+      }, {
+        "label" : "J. B. Jeyaretnam",
+        "uri" : "http://dbpedia.org/resource/J._B._Jeyaretnam"
+      }, {
+        "label" : "Jean-Baptiste Morin (politician)",
+        "uri" : "http://dbpedia.org/resource/Jean-Baptiste_Morin_(politician)"
+      }, {
+        "label" : "Jean-Baptiste Rolland",
+        "uri" : "http://dbpedia.org/resource/Jean-Baptiste_Rolland"
+      }, {
+        "label" : "Louise of the Netherlands",
+        "uri" : "http://dbpedia.org/resource/Louise_of_the_Netherlands"
+      }, {
+        "label" : "Nathanael Burwash",
+        "uri" : "http://dbpedia.org/resource/Nathanael_Burwash"
+      }, {
+        "label" : "Maithripala Sirisena",
+        "uri" : "http://dbpedia.org/resource/Maithripala_Sirisena"
+      }, {
+        "label" : "Rauff Hakeem",
+        "uri" : "http://dbpedia.org/resource/Rauff_Hakeem"
+      }, {
+        "label" : "André-Eugène Pirson",
+        "uri" : "http://dbpedia.org/resource/André-Eugène_Pirson"
+      }, {
+        "label" : "Pierre Baillargeon",
+        "uri" : "http://dbpedia.org/resource/Pierre_Baillargeon"
+      }, {
+        "label" : "Soeprapto (prosecutor)",
+        "uri" : "http://dbpedia.org/resource/Soeprapto_(prosecutor)"
+      }, {
+        "label" : "Basuki Rahmat",
+        "uri" : "http://dbpedia.org/resource/Basuki_Rahmat"
+      }, {
+        "label" : "Charles-Christophe Malhiot",
+        "uri" : "http://dbpedia.org/resource/Charles-Christophe_Malhiot"
+      }, {
+        "label" : "Charles Champagne (MLA for Deux-Montagnes)",
+        "uri" : "http://dbpedia.org/resource/Charles_Champagne_(MLA_for_Deux-Montagnes)"
+      }, {
+        "label" : "Consort Li (Zhenzong)",
+        "uri" : "http://dbpedia.org/resource/Consort_Li_(Zhenzong)"
+      }, {
+        "label" : "Dick de Hoog",
+        "uri" : "http://dbpedia.org/resource/Dick_de_Hoog"
+      }, {
+        "label" : "Dirck van Cloon",
+        "uri" : "http://dbpedia.org/resource/Dirck_van_Cloon"
+      }, {
+        "label" : "Fred Young (director)",
+        "uri" : "http://dbpedia.org/resource/Fred_Young_(director)"
+      }, {
+        "label" : "Hendrikus V. \"Henk\" Zomers",
+        "uri" : "http://dbpedia.org/resource/Hendrikus_V._%22Henk%22_Zomers"
+      }, {
+        "label" : "Jean-Baptiste Brousseau",
+        "uri" : "http://dbpedia.org/resource/Jean-Baptiste_Brousseau"
+      }, {
+        "label" : "Joseph-Alfred Mousseau",
+        "uri" : "http://dbpedia.org/resource/Joseph-Alfred_Mousseau"
+      }, {
+        "label" : "Louis-Pierre-Paul Cardin",
+        "uri" : "http://dbpedia.org/resource/Louis-Pierre-Paul_Cardin"
+      }, {
+        "label" : "Louis-Tréfflé Dorais",
+        "uri" : "http://dbpedia.org/resource/Louis-Tréfflé_Dorais"
+      }, {
+        "label" : "Léandre Dumouchel",
+        "uri" : "http://dbpedia.org/resource/Léandre_Dumouchel"
+      }, {
+        "label" : "Matthew Henry Cochrane",
+        "uri" : "http://dbpedia.org/resource/Matthew_Henry_Cochrane"
+      }, {
+        "label" : "Maurice Laframboise",
+        "uri" : "http://dbpedia.org/resource/Maurice_Laframboise"
+      }, {
+        "label" : "Nicolaas Scholtz",
+        "uri" : "http://dbpedia.org/resource/Nicolaas_Scholtz"
+      }, {
+        "label" : "S. Rajaratnam",
+        "uri" : "http://dbpedia.org/resource/S._Rajaratnam"
+      }, {
+        "label" : "S. Rajaratnam (Ceylonese lawyer)",
+        "uri" : "http://dbpedia.org/resource/S._Rajaratnam_(Ceylonese_lawyer)"
+      }, {
+        "label" : "Sergei Ostapenko",
+        "uri" : "http://dbpedia.org/resource/Sergei_Ostapenko"
+      }, {
+        "label" : "Spiru Haret",
+        "uri" : "http://dbpedia.org/resource/Spiru_Haret"
+      }, {
+        "label" : "Willem Anton van Vloten",
+        "uri" : "http://dbpedia.org/resource/Willem_Anton_van_Vloten"
+      }, {
+        "label" : "Milan I of Serbia",
+        "uri" : "http://dbpedia.org/resource/Milan_I_of_Serbia"
+      }, {
+        "label" : "Ali Murtopo",
+        "uri" : "http://dbpedia.org/resource/Ali_Murtopo"
+      }, {
+        "label" : "Alvin Head Moore",
+        "uri" : "http://dbpedia.org/resource/Alvin_Head_Moore"
+      }, {
+        "label" : "Charles Langelier",
+        "uri" : "http://dbpedia.org/resource/Charles_Langelier"
+      }, {
+        "label" : "François Langelier",
+        "uri" : "http://dbpedia.org/resource/François_Langelier"
+      }, {
+        "label" : "Henry Lovell",
+        "uri" : "http://dbpedia.org/resource/Henry_Lovell"
+      }, {
+        "label" : "Henry Thomas Duffy",
+        "uri" : "http://dbpedia.org/resource/Henry_Thomas_Duffy"
+      }, {
+        "label" : "Moïse Houde",
+        "uri" : "http://dbpedia.org/resource/Moïse_Houde"
+      }, {
+        "label" : "Mustafa Batdyyev",
+        "uri" : "http://dbpedia.org/resource/Mustafa_Batdyyev"
+      }, {
+        "label" : "Usmar Ismail",
+        "uri" : "http://dbpedia.org/resource/Usmar_Ismail"
+      }, {
+        "label" : "Abdurrahman Baswedan",
+        "uri" : "http://dbpedia.org/resource/Abdurrahman_Baswedan"
+      }, {
+        "label" : "Alexey Zhukanenko",
+        "uri" : "http://dbpedia.org/resource/Alexey_Zhukanenko"
+      }, {
+        "label" : "Jean Baptiste August Kessler",
+        "uri" : "http://dbpedia.org/resource/Jean_Baptiste_August_Kessler"
+      }, {
+        "label" : "Kenneth Yates",
+        "uri" : "http://dbpedia.org/resource/Kenneth_Yates"
+      }, {
+        "label" : "Viktor Nemkov",
+        "uri" : "http://dbpedia.org/resource/Viktor_Nemkov"
+      }, {
+        "label" : "A. Amirthalingam",
+        "uri" : "http://dbpedia.org/resource/A._Amirthalingam"
+      }, {
+        "label" : "Lester James Peries",
+        "uri" : "http://dbpedia.org/resource/Lester_James_Peries"
+      }, {
+        "label" : "V. Anandasangaree",
+        "uri" : "http://dbpedia.org/resource/V._Anandasangaree"
+      }, {
+        "label" : "Jan Toorop",
+        "uri" : "http://dbpedia.org/resource/Jan_Toorop"
+      }, {
+        "label" : "Alfred Belpaire",
+        "uri" : "http://dbpedia.org/resource/Alfred_Belpaire"
+      }, {
+        "label" : "Wilopo",
+        "uri" : "http://dbpedia.org/resource/Wilopo"
+      }, {
+        "label" : "Alu Alkhanov",
+        "uri" : "http://dbpedia.org/resource/Alu_Alkhanov"
+      }, {
+        "label" : "Guido Gezelle",
+        "uri" : "http://dbpedia.org/resource/Guido_Gezelle"
+      }, {
+        "label" : "Ilyas Akhmadov",
+        "uri" : "http://dbpedia.org/resource/Ilyas_Akhmadov"
+      }, {
+        "label" : "Ion Creangă",
+        "uri" : "http://dbpedia.org/resource/Ion_Creangă"
+      }, {
+        "label" : "Joseph-Édouard Cauchon",
+        "uri" : "http://dbpedia.org/resource/Joseph-Édouard_Cauchon"
+      }, {
+        "label" : "Pramoedya Ananta Toer",
+        "uri" : "http://dbpedia.org/resource/Pramoedya_Ananta_Toer"
+      }, {
+        "label" : "Anatoliy Kolesnikov",
+        "uri" : "http://dbpedia.org/resource/Anatoliy_Kolesnikov"
+      }, {
+        "label" : "Andrey Zeits",
+        "uri" : "http://dbpedia.org/resource/Andrey_Zeits"
+      }, {
+        "label" : "Mukhtar Ablyazov",
+        "uri" : "http://dbpedia.org/resource/Mukhtar_Ablyazov"
+      }, {
+        "label" : "Saara Kuugongelwa",
+        "uri" : "http://dbpedia.org/resource/Saara_Kuugongelwa"
+      }, {
+        "label" : "Timur Kulibayev",
+        "uri" : "http://dbpedia.org/resource/Timur_Kulibayev"
+      }, {
+        "label" : "Burhanuddin Harahap",
+        "uri" : "http://dbpedia.org/resource/Burhanuddin_Harahap"
+      }, {
+        "label" : "Hans Croon",
+        "uri" : "http://dbpedia.org/resource/Hans_Croon"
+      }, {
+        "label" : "Paul Couture",
+        "uri" : "http://dbpedia.org/resource/Paul_Couture"
+      }, {
+        "label" : "Soekiman Wirjosandjojo",
+        "uri" : "http://dbpedia.org/resource/Soekiman_Wirjosandjojo"
+      }, {
+        "label" : "Abraham Bernard",
+        "uri" : "http://dbpedia.org/resource/Abraham_Bernard"
+      }, {
+        "label" : "Achille Larose",
+        "uri" : "http://dbpedia.org/resource/Achille_Larose"
+      }, {
+        "label" : "Amédée Gaboury",
+        "uri" : "http://dbpedia.org/resource/Amédée_Gaboury"
+      }, {
+        "label" : "Andrew Esinhart",
+        "uri" : "http://dbpedia.org/resource/Andrew_Esinhart"
+      }, {
+        "label" : "Antoine Casavant",
+        "uri" : "http://dbpedia.org/resource/Antoine_Casavant"
+      }, {
+        "label" : "Benyamin Sueb",
+        "uri" : "http://dbpedia.org/resource/Benyamin_Sueb"
+      }, {
+        "label" : "Jacques Picard",
+        "uri" : "http://dbpedia.org/resource/Jacques_Picard"
+      }, {
+        "label" : "Jan Engelbert Tatengkeng",
+        "uri" : "http://dbpedia.org/resource/Jan_Engelbert_Tatengkeng"
+      }, {
+        "label" : "Jean-Baptiste Jodoin",
+        "uri" : "http://dbpedia.org/resource/Jean-Baptiste_Jodoin"
+      }, {
+        "label" : "Joseph-Ubalde Beaudry",
+        "uri" : "http://dbpedia.org/resource/Joseph-Ubalde_Beaudry"
+      }, {
+        "label" : "Joseph Beaudreau",
+        "uri" : "http://dbpedia.org/resource/Joseph_Beaudreau"
+      }, {
+        "label" : "Joseph Garon",
+        "uri" : "http://dbpedia.org/resource/Joseph_Garon"
+      }, {
+        "label" : "Joseph Pilon",
+        "uri" : "http://dbpedia.org/resource/Joseph_Pilon"
+      }, {
+        "label" : "Joseph Robillard",
+        "uri" : "http://dbpedia.org/resource/Joseph_Robillard"
+      }, {
+        "label" : "Louis-Napoléon Larochelle",
+        "uri" : "http://dbpedia.org/resource/Louis-Napoléon_Larochelle"
+      }, {
+        "label" : "Louis Molleur",
+        "uri" : "http://dbpedia.org/resource/Louis_Molleur"
+      }, {
+        "label" : "Léon-Charles Clément",
+        "uri" : "http://dbpedia.org/resource/Léon-Charles_Clément"
+      }, {
+        "label" : "Marie Rose Durocher",
+        "uri" : "http://dbpedia.org/resource/Marie_Rose_Durocher"
+      }, {
+        "label" : "Michel-Adrien Bessette",
+        "uri" : "http://dbpedia.org/resource/Michel-Adrien_Bessette"
+      }, {
+        "label" : "Michel Guillaume Baby",
+        "uri" : "http://dbpedia.org/resource/Michel_Guillaume_Baby"
+      }, {
+        "label" : "Migettuwatte Gunananda Thera",
+        "uri" : "http://dbpedia.org/resource/Migettuwatte_Gunananda_Thera"
+      }, {
+        "label" : "Nasratullah Nasrat",
+        "uri" : "http://dbpedia.org/resource/Nasratullah_Nasrat"
+      }, {
+        "label" : "Nazaire Bernatchez",
+        "uri" : "http://dbpedia.org/resource/Nazaire_Bernatchez"
+      }, {
+        "label" : "Octave Magnan",
+        "uri" : "http://dbpedia.org/resource/Octave_Magnan"
+      } ]
     },
     "combination" : true
   } ]
