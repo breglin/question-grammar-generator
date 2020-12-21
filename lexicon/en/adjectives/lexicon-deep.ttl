@@ -1,0 +1,36 @@
+@prefix :        <http://localhost:8080/lexicon#> .
+
+@prefix lexinfo: <http://www.lexinfo.net/ontology/2.0/lexinfo#> .
+@prefix lemon:   <http://lemon-model.net/lemon#> .
+
+@base            <http://localhost:8080#> .
+
+:lexicon_en a    lemon:Lexicon ;
+  lemon:language "en" ;
+  lemon:entry    :deep .
+
+:deep a                 lemon:LexicalEntry ;
+  lexinfo:partOfSpeech lexinfo:adjective ;
+  lemon:canonicalForm  :deep_lemma ;
+  lemon:synBehavior    :deep_scaleFrame ;
+  lemon:sense          :deep_sense .
+
+:deep_lemma lemon:writtenRep "deep"@en .
+
+:deep_scaleFrame a                  lexinfo:AdjectiveScaleFrame ;
+  lexinfo:copulativeSubject :deep_subj ;
+  lexinfo:adverbialComplement :deep_obj .
+
+:deep_sense a     lemon:OntoMap, lemon:LexicalSense ;
+  lemon:ontoMapping :deep_sense ;
+  lemon:reference   <http://dbpedia.org/ontology/maximumDepth> ;
+  lemon:subjOfProp  :deep_obj ;
+  lemon:objOfProp   :deep_subj ;
+  lemon:condition   :deep_condition .
+
+:deep_condition a      lemon:condition ;
+  lemon:propertyDomain <http://dbpedia.org/ontology/Place> ;
+  lemon:propertyRange  <http://www.w3.org/2001/XMLSchema#double> .
+
+
+

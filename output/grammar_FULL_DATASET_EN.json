@@ -7131,6 +7131,516 @@
     "id" : "65",
     "language" : "EN",
     "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek prime ministers?", "Which is a Greek prime minister?", "Which was a Greek prime minister?", "Which were Greek prime ministers?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/PrimeMinister>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "66",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek prime minister", "Greek prime ministers" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/PrimeMinister>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "67",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek office holders?", "Which is a Greek office holder?", "Which was a Greek office holder?", "Which were Greek office holders?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/OfficeHolder>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "68",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek office holder", "Greek office holders" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/OfficeHolder>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "69",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek agents?", "Which is a Greek agent?", "Which was a Greek agent?", "Which were Greek agents?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Agent>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "70",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek agent", "Greek agents" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Agent>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "71",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek artists?", "Which is a Greek artist?", "Which was a Greek artist?", "Which were Greek artists?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "72",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek artist", "Greek artists" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Artist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "73",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek athletes?", "Which is a Greek athlete?", "Which was a Greek athlete?", "Which were Greek athletes?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Athlete>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "74",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek athlete", "Greek athletes" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Athlete>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "75",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek scientists?", "Which is a Greek scientist?", "Which was a Greek scientist?", "Which were Greek scientists?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Scientist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "76",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek scientist", "Greek scientists" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Scientist>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "77",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek politicians?", "Which is a Greek politician?", "Which was a Greek politician?", "Which were Greek politicians?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "78",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek politician", "Greek politicians" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Politician>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "79",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek swimmers?", "Which is a Greek swimmer?", "Which was a Greek swimmer?", "Which were Greek swimmers?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Swimmer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "80",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek swimmer", "Greek swimmers" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Swimmer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "81",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek volleyball players?", "Which is a Greek volleyball player?", "Which was a Greek volleyball player?", "Which were Greek volleyball players?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/VolleyballPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "82",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek volleyball player", "Greek volleyball players" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/VolleyballPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "83",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "AWARD",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek awards?", "Which is a Greek award?", "Which was a Greek award?", "Which were Greek awards?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Award>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "84",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "AWARD",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek award", "Greek awards" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Award>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "85",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek persons?", "Which is a Greek person?", "Which was a Greek person?", "Which were Greek persons?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "86",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek person", "Greek persons" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Person>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "87",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek basketball players?", "Which is a Greek basketball player?", "Which was a Greek basketball player?", "Which were Greek basketball players?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/BasketballPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "88",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek basketball player", "Greek basketball players" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/BasketballPlayer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "89",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek writers?", "Which is a Greek writer?", "Which was a Greek writer?", "Which were Greek writers?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Writer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "90",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "PERSON",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek writer", "Greek writers" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Writer>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "91",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "THING",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek humans?", "Which is a Greek human?", "Which was a Greek human?", "Which were Greek humans?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wikidata.org/entity/Q5>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "92",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "THING",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek human", "Greek humans" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.wikidata.org/entity/Q5>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "93",
+    "language" : "EN",
+    "type" : "SENTENCE",
+    "bindingType" : "THING",
+    "returnType" : "THING",
+    "frameType" : "AA",
+    "sentences" : [ "Which are Greek presidents?", "Which is a Greek president?", "Which was a Greek president?", "Which were Greek presidents?" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/President>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "94",
+    "language" : "EN",
+    "type" : "NP",
+    "bindingType" : "THING",
+    "returnType" : "THING",
+    "frameType" : "AA",
+    "sentences" : [ "a Greek president", "Greek presidents" ],
+    "queryType" : "SELECT",
+    "sparqlQuery" : "(bgp\n  (triple ?isA <http://dbpedia.org/ontology/nationality> <http://dbpedia.org/resource/Greece>)\n  (triple ?isA <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/President>)\n)\n",
+    "sentenceToSparqlParameterMapping" : null,
+    "returnVariable" : "isA",
+    "sentenceBindings" : {
+      "bindingVariableName" : "NONE",
+      "bindingList" : [ ]
+    },
+    "combination" : false
+  }, {
+    "id" : "95",
+    "language" : "EN",
+    "type" : "SENTENCE",
     "bindingType" : "PERSON",
     "returnType" : "FILM",
     "frameType" : "APP",
@@ -7447,7 +7957,7 @@
     },
     "combination" : false
   }, {
-    "id" : "66",
+    "id" : "96",
     "language" : "EN",
     "type" : "NP",
     "bindingType" : "PERSON",
@@ -7766,7 +8276,7 @@
     },
     "combination" : false
   }, {
-    "id" : "67",
+    "id" : "97",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "PERSON",
@@ -8085,7 +8595,7 @@
     },
     "combination" : false
   }, {
-    "id" : "68",
+    "id" : "98",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "LOCATION",
@@ -8404,7 +8914,7 @@
     },
     "combination" : false
   }, {
-    "id" : "69",
+    "id" : "99",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "PERSON",
@@ -8723,7 +9233,7 @@
     },
     "combination" : false
   }, {
-    "id" : "70",
+    "id" : "100",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "CITY",
@@ -9042,7 +9552,7 @@
     },
     "combination" : false
   }, {
-    "id" : "71",
+    "id" : "101",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "LOCATION",
@@ -9361,7 +9871,7 @@
     },
     "combination" : false
   }, {
-    "id" : "72",
+    "id" : "102",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "DATE",
@@ -9680,7 +10190,7 @@
     },
     "combination" : false
   }, {
-    "id" : "73",
+    "id" : "103",
     "language" : "EN",
     "type" : "SENTENCE",
     "bindingType" : "LOCATION",
