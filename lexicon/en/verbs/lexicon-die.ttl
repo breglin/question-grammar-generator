@@ -33,7 +33,7 @@
 
 :die_ontomap a     lemon:OntoMap, lemon:LexicalSense ;
   lemon:ontoMapping :die_ontomap ;
-  lemon:reference   <hhttp://dbpedia.org/ontology/deathPlace> ;
+  lemon:reference   <http://dbpedia.org/ontology/deathPlace> ;
   lemon:subjOfProp  :die_obj ;
   lemon:objOfProp   :die_subj ;
   lemon:condition   :die_condition .
@@ -41,7 +41,7 @@
 
 :die_condition a      lemon:condition ;
   lemon:propertyDomain <http://dbpedia.org/ontology/Person> ;
-  lemon:propertyRange  <http://dbpedia.org/ontology/City> .
+  lemon:propertyRange  <http://dbpedia.org/ontology/Place> .
 
 :die_obj lemon:marker :in .
 
